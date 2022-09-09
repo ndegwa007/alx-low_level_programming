@@ -1,4 +1,5 @@
 	.file	"intel.c"
+	.intel_syntax noprefix
 	.text
 	.globl	main
 	.type	main, @function
@@ -6,24 +7,24 @@ main:
 .LFB0:
 	.cfi_startproc
 	endbr64
-	pushq	%rbp
+	push	rbp
 	.cfi_def_cfa_offset 16
 	.cfi_offset 6, -16
-	movq	%rsp, %rbp
+	mov	rbp, rsp
 	.cfi_def_cfa_register 6
-	subq	$16, %rsp
-	movq	%fs:40, %rax
-	movq	%rax, -8(%rbp)
-	xorl	%eax, %eax
-	movl	$1953653069, -15(%rbp)
-	movw	$28265, -11(%rbp)
-	movb	$0, -9(%rbp)
-	leaq	-15(%rbp), %rax
-	movq	%rax, %rdi
+	sub	rsp, 16
+	mov	rax, QWORD PTR fs:40
+	mov	QWORD PTR -8[rbp], rax
+	xor	eax, eax
+	mov	DWORD PTR -15[rbp], 1953653069
+	mov	WORD PTR -11[rbp], 28265
+	mov	BYTE PTR -9[rbp], 0
+	lea	rax, -15[rbp]
+	mov	rdi, rax
 	call	puts@PLT
-	movl	$0, %eax
-	movq	-8(%rbp), %rdx
-	xorq	%fs:40, %rdx
+	mov	eax, 0
+	mov	rdx, QWORD PTR -8[rbp]
+	xor	rdx, QWORD PTR fs:40
 	je	.L3
 	call	__stack_chk_fail@PLT
 .L3:
