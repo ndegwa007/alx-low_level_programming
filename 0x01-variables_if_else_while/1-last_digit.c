@@ -16,7 +16,7 @@ int main(void)
 
 	n = rand() - RAND_MAX / 2;
 
-	printf("%s %d is %d and is", last, n, n % 10);
+	printf("%s %d is %d and is ", last, n, n % 10);
 
 	/* Code here */
 	if (n % 10 > 5)
