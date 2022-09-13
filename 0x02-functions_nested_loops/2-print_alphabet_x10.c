@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * print-alphabet_x10 - print the alphabets 10 times
+ * print_alphabet_x10- print the alphabets 10 times
+ * Description: prints the alphabets X10 on newline
  *
  * Return: 0
  */
@@ -11,13 +12,15 @@ void print_alphabet_x10(void)
 
 	while (i <= 10)
 	{
-		for (char j = 'a'; j <= 'z'; j++)
+		char j = 'a';
+
+		while (j <= 'z')
 		{
 			_putchar(j);
+			j++;
 		}
 		_putchar('\n');
 		i++;
 	}
-	
 }
 
