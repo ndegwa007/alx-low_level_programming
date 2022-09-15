@@ -3,7 +3,7 @@
 /**
  * print_numbers - print numbers from 0-9
  *
- * Return: (0)
+ * Return: numbers 0-9
  */
 
 void print_numbers(void)
@@ -16,5 +16,4 @@ void print_numbers(void)
 	}
 
 	_putchar('\n');
-	return;
 }
