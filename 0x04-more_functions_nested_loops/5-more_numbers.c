@@ -3,14 +3,14 @@
 /**
  * more_numbers - prints numbers 0-14 ten times
  *
- * Return: 0-14 x10
+ * Description: multiple output of numbers from 0 to 14 ten times
  */
 
 void more_numbers(void)
 {
 	int n = 0;
 
-	while (n <= 10)
+	while (n < 10)
 	{
 
 		int i = 0;
