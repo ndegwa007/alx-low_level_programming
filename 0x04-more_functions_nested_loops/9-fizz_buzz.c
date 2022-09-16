@@ -4,7 +4,7 @@
 /**
  * main - fizz buzz
  *
- * Return: fizzbuzz
+ * Return: 0
  */
 
 int main(void)
