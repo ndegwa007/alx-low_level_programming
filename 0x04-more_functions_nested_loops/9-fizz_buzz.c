@@ -9,33 +9,28 @@
 
 int main(void)
 {
-	int i = 100;
+	int i;
 
-	int j;
-
-	char str[] = "Fizz";
-
-	char strb[] = "Buzz";
-	char strfb[] = "FizzBuzz";
-
-	for (j = 1; j <= i; j++)
+	for (i = 1; i <= 100; i++)
 	{
-		if ((j % 3 == 0) && (j % 5 == 0))
+		if ((i % 3 == 0) && (i % 5 != 0))
 		{
-			printf("%s ", strfb);
+			printf("Fizz ");
 		}
-		else if (j % 5 == 0)
+		else if ((i % 5 == 0) && (i % 3 != 0))
 		{
-			printf("%s ", strb);
+			printf("Buzz ");
 		}
-		else if (j % 3 == 0)
+		else if ((i % 5 == 0) && (i % 3 == 0))
 		{
-			printf("%s ", str);
+			printf("FizzBuzz ");
 		}
 		else
 		{
-			printf("%d ", j);
+			printf("%d ", i);
 		}
 	}
+
+
 	printf("\n");
 }
