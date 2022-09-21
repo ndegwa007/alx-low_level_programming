@@ -12,19 +12,20 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int s1_size = strlen(s1);
-	int s2_size = strlen(s2);
-
-	if (s1_size >  s2_size)
+	for (; *s1 != '\0' && *s2 != '\0'; s1++, s2++)
 	{
-		return (15);
+		if (*s1 != *s2)
+			return (*s1 - *s2);
+		if (*s1 == '\0' || *s2 == '\0')
+			break;
 	}
-	else if (s1_size == s2_size)
+	if (*s1 == *s2)
 	{
 		return (0);
 	}
 	else
 	{
-		return (-15);
+		return (*s1 - *s2);
 	}
+
 }

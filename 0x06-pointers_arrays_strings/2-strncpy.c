@@ -5,6 +5,7 @@
  * _strncpy - copies a str
  * @dest: str1
  * @src: str to be copied
+ * @n: number of runs
  *
  * Return: dest str
  */
