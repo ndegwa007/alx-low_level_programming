@@ -28,6 +28,5 @@ int sqrt_num(int x, int y)
 		return (-1);
 	if (s == x)
 		return (y);
-	if (s < x)
-		return (sqrt_num(x, y + 1));
+	return (sqrt_num(x, y + 1));
 }
