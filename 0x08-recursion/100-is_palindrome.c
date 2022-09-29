@@ -11,12 +11,8 @@
 int is_palindrome(char *s)
 {
 	int x = 0;
-	int i = 0;
 
-	while (s[i] != '\0')
-		i++;
-
-	return (checker(s, x, i - 1));
+	return (checker(s, x, strrlen(s) - 1));
 }
 
 /**
@@ -39,4 +35,18 @@ int checker(char *str, int l, int r)
 	if (str[l] == str[r])
 		return (checker(str, l + 1, r - 1));
 	return (0);
+}
+
+/**
+ * strrlen - return str length
+ * @str: string
+ *
+ * Return: string length
+ **/
+
+int strrlen(char *s)
+{
+	if (*s == '\0')
+		return (0);
+	return (1 + strrlen(s + 1));
 }
