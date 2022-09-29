@@ -39,7 +39,7 @@ int checker(char *str, int l, int r)
 
 /**
  * strrlen - return str length
- * @str: string
+ * @s: string
  *
  * Return: string length
  **/
