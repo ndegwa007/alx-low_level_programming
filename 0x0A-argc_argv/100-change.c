@@ -16,34 +16,34 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	int amt = atoi(argv[1]);
+	int cents = atoi(argv[1]);
 	int i = 0;
 
-	while (amt > 0)
+	while (cents > 0)
 	{
-		if (amt >= 25)
+		if (cents >= 25)
 		{
-			amt -= 25;
+			cents -= 25;
 			i += 1;
 		}
-		else if (amt >= 10)
+		else if (cents >= 10)
 		{
-			amt -= 10;
+			cents -= 10;
 			i += 1;
 		}
-		else if (amt >= 5)
+		else if (cents >= 5)
 		{
-			amt -= 5;
+			cents -= 5;
 			i += 1;
 		}
-		else if (amt >= 2)
+		else if (cents >= 2)
 		{
-			amt -= 2;
+			cents -= 2;
 			i += 1;
 		}
 		else
 		{
-			amt -= 1;
+			cents -= 1;
 			i += 1;
 		}
 	}
