@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -23,9 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	k = 0;
 
 	if (s1 == NULL)
-	{
 		s1 == "";
-	}
 	if (s2 == NULL)
 		s2 == "";
 	while (s1[i])
@@ -39,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		p[k] = s1[k];
 		k += 1;
 	}
-	while (j <= n)
+	while (j < n)
 	{
 		p[k + j] = s2[j];
 		j += 1;
