@@ -13,9 +13,9 @@
 int main(int argc, char **argv)
 {
 	int num1, num2, result;
-	int (*res)(int,int);
+	int (*res)(int, int);
 
-	if(argc != 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);

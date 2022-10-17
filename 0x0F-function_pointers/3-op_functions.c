@@ -38,7 +38,7 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_dic - print a divided by b
+ * op_div - print a divided by b
  * @a: int
  * @b: int
  * Return: a divided by b
