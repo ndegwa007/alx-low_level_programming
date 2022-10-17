@@ -38,5 +38,5 @@ int main(int argc, char **argv)
 	num2 = atoi(argv[3]);
 	result = res(num1, num2);
 	printf("%d\n", result);
+	return (0);
 }
-
