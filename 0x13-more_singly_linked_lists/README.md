@@ -7,3 +7,6 @@
 
 2. size\_t listint\_len(const listint\_t *h);
 > returns the number of elements in a linked **listint\_t**
+
+3. listint\_t  *add\_nodeint(listint\_t **head, const int n);
+> adds a new node at the beginning of a linked list
