@@ -14,5 +14,6 @@
 4. listint_t *add\_nodeint\_end(listint\_t \*\*head, const int n);
 > adds a new node at the end of a linked list.
 
-5.
+5. void free\_listint(listint\_t *head);
+> frees a linked list
 
