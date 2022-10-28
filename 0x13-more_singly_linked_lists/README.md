@@ -10,3 +10,9 @@
 
 3. listint\_t  *add\_nodeint(listint\_t **head, const int n);
 > adds a new node at the beginning of a linked list
+
+4. listint_t *add\_nodeint\_end(listint\_t \*\*head, const int n);
+> adds a new node at the end of a linked list.
+
+5.
+
