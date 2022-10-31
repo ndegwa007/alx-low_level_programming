@@ -17,3 +17,5 @@
 5. void free\_listint(listint\_t *head);
 > frees a linked list
 
+6. void free\_listint2(listint\_t **head);
+> frees a linked list, sets the head to NULL
