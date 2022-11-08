@@ -9,14 +9,17 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int x, decimal = 0, base = 1;
+	unsigned int x, decimal = 0, base = 1;
 
 	int slen = strlen(b);
+
 
 	for (x = (slen - 1); x >= 0; x--)
 	{
 		if (b[x] == '1')
+		{
 			decimal += base;
+		}
 		base *= 2;
 	}
 
