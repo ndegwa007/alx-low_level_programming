@@ -10,9 +10,20 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int x, decimal = 0, base = 1;
+	size_t i = 0;
+
 
 	if (b == NULL)
 		return (0);
+
+	while (i < (strlen(b) - 1))
+	{
+		if (b[i] != '1' && b[i] != '0')
+		{
+			return (0);
+		}
+		i++;
+	}
 	for (x = strlen(b) - 1; x >= 0; x--)
 	{
 
@@ -21,13 +32,6 @@ unsigned int binary_to_uint(const char *b)
 			decimal += base;
 		}
 		base *= 2;
-	}
-
-	while (b[x] != '\0')
-	{
-		if (b[x] != '1' || b[x] != '0')
-			return (0);
-		x += 1;
 	}
 
 	return (decimal);
