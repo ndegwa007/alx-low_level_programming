@@ -18,8 +18,8 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 	if (current == NULL)
 	{
-		return (NULL);
 		free(current);
+		return (NULL);
 	}
 
 	if ((*head) == NULL)
