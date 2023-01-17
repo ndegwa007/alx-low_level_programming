@@ -1,3 +1,5 @@
+#include "hash_tables.h"
+
 /**
  * key_index -  gives you the index of the key
  * @key: unsigned char that is thee key in the hashtable
@@ -8,14 +10,5 @@
 
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
-	unsigned long int i;
-	int j;
-
-	for (j = 0; key[j]; j++)
-	{
-
-		i += key[j];
-	}
-
-	return (i % size);
+	return (hash_djb2(key) % size);
 }
