@@ -1,0 +1,23 @@
+# Makefile to build a school executable
+# Name of the compile
+CC = gcc
+
+# Name of the executable 
+NAME = school
+
+# Source files
+SRC = main.c school.c
+
+# Object files
+OBJ = $(SRC:.c=.o)
+
+# Default target
+all: $(NAME) 
+
+# Rule for building the executable
+$(NAME): $(OBJ)
+	$(CC) $^ -o $@ 
+
+# Rule for compiling source files to object files
+%.o: %.c
+	$(CC)    -c -o $@ $<	
